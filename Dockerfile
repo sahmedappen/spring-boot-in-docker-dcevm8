@@ -11,7 +11,7 @@ RUN apk -U upgrade \
     && apk add curl \
     && apk add unzip \
     && mkdir -p /opt/hotswap-agent/ \
-    && curl -L -o /opt/hotswap-agent/hotswap-agent.jar "https://github.com/HotswapProjects/HotswapAgent/releases/download/1.3.1-SNAPSHOT/hotswap-agent-1.3.1-SNAPSHOT.jar"
+    && curl -L -o /opt/hotswap-agent/hotswap-agent.jar "https://github.com/HotswapProjects/HotswapAgent/releases/download/RELEASE-1.4.1/hotswap-agent-1.4.1.jar"
     
 ARG DEPENDENCY=target/dependency
 COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
